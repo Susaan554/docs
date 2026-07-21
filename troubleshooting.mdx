@@ -1,0 +1,104 @@
+---
+title: "Troubleshooting Common Issues in Resume Analyzer"
+sidebarTitle: "Troubleshooting"
+description: "Step-by-step guidance for resolving upload errors, file parsing problems, and unexpected analysis results in AI Resume Analyzer."
+---
+
+This guide helps you resolve the most common issues you may encounter when using AI Resume Analyzer. Work through the relevant section below to identify and fix the problem quickly so you can get back to improving your resume.
+
+## Upload & File Issues
+
+<AccordionGroup>
+  <Accordion title="My file won't upload">
+    If your file fails to upload, work through the following checks in order:
+
+    1. **Verify the file format.** Only **PDF** and **DOCX** files are accepted. Files in other formats (e.g., `.pages`, `.txt`, `.odt`) will be rejected. Convert your resume to one of the supported formats and try again.
+    2. **Check for file corruption.** Try opening the file on your device to confirm it is not damaged. If it won't open locally, recreate or re-export it from your original source.
+    3. **Check the file size.** Very large files (typically over 10 MB) may fail to upload. If your file is unusually large, consider removing embedded images or exporting a lighter version.
+    4. **Try a different browser.** Browser extensions — particularly ad blockers or privacy tools — can interfere with file upload functionality. Switch to a different browser (e.g., Chrome, Firefox, Edge) or open an incognito/private window and try again.
+  </Accordion>
+
+  <Accordion title="The wrong file was uploaded">
+    No problem — simply **refresh the page** to reset the form. Once the page reloads, you can select the correct file and start a new analysis. File selection can be changed at any point before you click **Analyze**, so if you notice the wrong file is selected, click the file input field again to browse and choose the correct document without refreshing.
+  </Accordion>
+
+  <Accordion title="My scanned PDF isn't being read correctly">
+    AI Resume Analyzer uses **OCR (Optical Character Recognition)** to extract text from scanned, image-based PDFs. While this provides a fallback for scanned documents, OCR is less accurate than direct text extraction and can misread characters, skip sections, or produce garbled output.
+
+    For best results:
+
+    - **Export a text-based PDF** directly from Microsoft Word, Google Docs, LibreOffice, or any dedicated resume builder. These files embed selectable text that the parser reads with high accuracy.
+    - If you only have a scanned copy, try **retyping your resume** in a word processor and exporting a fresh PDF.
+    - As an alternative, **upload a DOCX version** of your resume if one is available — DOCX files are always text-based and avoid OCR entirely.
+
+    <Note>
+      You can tell whether your PDF is text-based by trying to highlight and copy text in your PDF viewer. If you can select individual words, it is text-based. If the cursor behaves like it is selecting an image, the file is scanned.
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+## Analysis & Results Issues
+
+<AccordionGroup>
+  <Accordion title="My skills are not showing up in the analysis">
+    The AI analyzes only the text that is explicitly written in your resume — it does not infer or assume skills based on context. If a skill is missing from your results, it is almost certainly because it is not named clearly in your document.
+
+    To fix this:
+
+    - Add a dedicated **Skills** section and list each competency by its full, standard name (e.g., **"Python"**, **"React"**, **"SQL"**, **"Project Management"**).
+    - Avoid uncommon abbreviations or internal company terminology. Use the same language that appears in job descriptions for the roles you're targeting.
+    - Make sure your resume is not using text embedded in images or decorative graphics — the parser can only read plain document text.
+  </Accordion>
+
+  <Accordion title="The analysis result seems generic">
+    Generic feedback is usually a reflection of generic resume content. The AI tailors its recommendations to the specific details it finds in your document. If your resume uses vague, non-specific bullet points, the output will be similarly broad.
+
+    To get more specific and actionable feedback:
+
+    - Replace vague phrases like *"Responsible for managing projects"* with specific, quantified statements like *"Led a team of 6 engineers to deliver a cloud migration project 2 weeks ahead of schedule."*
+    - Include measurable outcomes, technologies used, and clear scope wherever possible.
+    - Ensure your job titles, company names, and date ranges are clearly formatted so the AI can accurately map your experience.
+  </Accordion>
+
+  <Accordion title="My job match score is lower than expected">
+    A lower-than-expected match score usually points to one of two causes: an incomplete job description or a terminology mismatch between your resume and the role's requirements.
+
+    Try the following:
+
+    - **Paste the full job description.** Include all sections — the summary, responsibilities, and requirements. Partial job descriptions produce incomplete match calculations.
+    - **Check for terminology mismatches.** If the job description says *"Node.js"* but your resume says *"NodeJS"* or *"Node"*, the AI may not link them. Standardize your skill names to match the exact language used in job postings you are targeting.
+    - **Add missing skills you genuinely possess.** Review the skill gap section of your results and, where applicable, add skills you have but forgot to list on your resume.
+  </Accordion>
+
+  <Accordion title="Analysis is taking too long">
+    Analysis typically completes within a few seconds. If yours appears to be stalled:
+
+    1. **Wait up to 30 seconds** — occasional delays occur during periods of high server load and resolve on their own.
+    2. **Refresh the page and try again.** If the spinner has been running for more than 30 seconds with no result, a fresh submission usually resolves it.
+    3. **Check your internet connection.** A slow or intermittent connection can prevent the file and job description from being submitted successfully.
+    4. **Reduce file size if possible.** Very large DOCX or PDF files with embedded images can take longer to process. Exporting a leaner version of your resume may speed things up.
+  </Accordion>
+</AccordionGroup>
+
+## Best Practices to Avoid Issues
+
+Following these four practices prevents the majority of common issues before they occur.
+
+<CardGroup cols={2}>
+  <Card title="Use Text-Based PDFs" icon="file-pdf">
+    Export your resume directly from Microsoft Word, Google Docs, or a dedicated resume builder. Text-based PDFs are parsed with far greater accuracy than scanned image PDFs and eliminate OCR-related errors entirely.
+  </Card>
+  <Card title="Name Skills Explicitly" icon="tags">
+    Write out the full name of every skill you want recognized — for example, **Python**, **React**, **Project Management**, or **AWS**. The AI reads what is written; implied or abbreviated skills are frequently missed.
+  </Card>
+  <Card title="Paste Complete Job Descriptions" icon="clipboard">
+    Always include the full text of the job posting — the role summary, all responsibilities, and all requirements. Truncated or partial job descriptions lead to incomplete match scores and less targeted recommendations.
+  </Card>
+  <Card title="Use Standard Resume Structure" icon="list">
+    Organize your resume with clearly labeled sections such as **Experience**, **Education**, and **Skills**. A predictable, clean structure helps the parser correctly identify and categorize your content for analysis.
+  </Card>
+</CardGroup>
+
+<Note>
+  If you continue to experience issues not covered here, try using a different browser or device, as browser extensions can sometimes interfere with file uploads.
+</Note>

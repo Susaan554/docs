@@ -1,0 +1,68 @@
+{
+  "projectType": "saas",
+  "projectName": "AI Resume Analyzer",
+  "projectDescription": "An AI-powered resume analysis tool that evaluates resumes, identifies skill gaps, scores job compatibility, and delivers actionable improvement recommendations.",
+  "theme": "almond",
+  "primaryColor": "#4F46E5",
+  "lightColor": "#EEF2FF",
+  "darkColor": "#1E1B4B",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "how-it-works"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/resume-analysis",
+              "features/job-matching",
+              "features/skill-gap",
+              "features/improvement-tips"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/uploading-resume",
+              "guides/job-description-matching",
+              "guides/reading-your-report"
+            ]
+          },
+          {
+            "group": "FAQ & Support",
+            "pages": [
+              "faq",
+              "troubleshooting"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "General resume analysis with strengths and weaknesses breakdown",
+    "Job description compatibility scoring (match percentage)",
+    "Skill gap identification and improvement suggestions",
+    "Course and resource recommendations for career growth",
+    "PDF resume parsing with OCR fallback",
+    "ATS optimization insights",
+    "Instant AI-generated feedback powered by Google Generative AI"
+  ],
+  "publicApiSurface": [
+    "Resume upload (PDF/DOCX)",
+    "General resume analysis report",
+    "Job description input for matching",
+    "Match score output (percentage)",
+    "Skill gap report",
+    "Course recommendations list",
+    "Strengths and weaknesses summary"
+  ]
+}

@@ -1,0 +1,66 @@
+---
+title: "How AI Resume Analyzer Works Under the Hood"
+sidebarTitle: "How It Works"
+description: "Learn how AI Resume Analyzer uses Google Generative AI (Gemini) to parse, evaluate, and score your resume and deliver personalized recommendations."
+---
+
+AI Resume Analyzer uses Google Generative AI (Gemini) — one of the most advanced large language models available — to read your resume the way an experienced recruiter would. When you upload a file, the tool extracts your resume's content, passes it to Gemini for deep evaluation, and returns a structured report with scores, insights, and recommendations tailored specifically to your document. The entire pipeline runs automatically and delivers results in seconds.
+
+## The Analysis Pipeline
+
+<Steps>
+  <Step title="Resume Parsing">
+    The moment you upload your file, AI Resume Analyzer extracts the text content from your document. For standard PDF and DOCX files, the tool reads the text layer directly — preserving your section structure, headings, and formatting context. If your file is a scanned document or contains image-based text, an OCR (Optical Character Recognition) fallback automatically kicks in to extract the content before processing continues. This ensures accurate analysis regardless of how your resume was originally created.
+  </Step>
+
+  <Step title="Content Understanding">
+    The extracted text is sent to Google Generative AI (Gemini), which reads and interprets your resume as a whole. Gemini identifies and categorizes the key components of your resume, including:
+
+    - **Skills** — both technical and soft skills mentioned explicitly or implied through context
+    - **Work experience** — roles, responsibilities, achievements, and tenure
+    - **Education** — degrees, certifications, and institutions
+    - **Accomplishments** — quantified results, awards, and notable contributions
+
+    This step goes beyond keyword matching. Gemini understands language the same way a human reader does, recognizing synonyms, context, and the relative weight of different experiences.
+  </Step>
+
+  <Step title="Evaluation & Scoring">
+    With a full understanding of your resume's content, the AI evaluates it across multiple quality dimensions — including clarity, relevance, impact, and structure. Each dimension is scored individually and rolled up into an overall resume quality score.
+
+    When you run a **Job Match Analysis**, the AI also reads your target job description at this stage and calculates a compatibility score by comparing your qualifications against the role's stated requirements. It identifies which requirements you clearly meet, which you partially meet, and which are missing entirely.
+  </Step>
+
+  <Step title="Insight Generation">
+    Based on the evaluation results, the AI generates a personalized set of insights and recommendations. This includes:
+
+    - **Skill gaps** — skills required by the job (or expected in your field) that are absent from your resume
+    - **Course recommendations** — specific learning resources mapped to each identified skill gap
+    - **Improvement tips** — concrete, prioritized edits to strengthen weak sections of your resume
+    - **ATS optimization suggestions** — keyword additions and formatting adjustments to help your resume pass automated screening filters
+
+    Every recommendation is specific to your resume and your target role — not generic advice.
+  </Step>
+
+  <Step title="Report Delivery">
+    The completed analysis is compiled into a structured report and displayed instantly on your screen. There is no email to wait for, no PDF to download — your full results are available the moment processing finishes. You can review each section of your report on screen and revisit it as many times as you need before navigating away.
+  </Step>
+</Steps>
+
+## Supported File Formats
+
+AI Resume Analyzer accepts the two most widely used resume file formats. Both are processed with equal accuracy for standard, text-based documents.
+
+| Format | Support | Notes |
+|--------|---------|-------|
+| **PDF** | ✅ Fully supported | Recommended format. Text-layer PDFs deliver the fastest and most accurate parsing. Scanned PDFs are handled via OCR fallback. |
+| **DOCX** | ✅ Fully supported | Microsoft Word documents are parsed directly. Ensure the file is not password-protected or corrupted before uploading. |
+
+## AI Model
+
+AI Resume Analyzer is powered by **Google Generative AI (Gemini)** — the same family of AI models that Google makes available to enterprise HR platforms and recruiting tools used by professionals worldwide. Gemini is a multimodal large language model trained on a broad corpus of professional, technical, and general-domain text, making it exceptionally well-suited for understanding the nuances of resume content, job requirements, and career language.
+
+Because the analysis is powered by Gemini, you benefit from the same depth of language understanding that top companies use to evaluate candidates — applied directly to your own resume, instantly, and without intermediaries.
+
+<Info>
+  **Your data is yours.** Your resume content is used solely to generate your analysis report during your session. It is not used to train AI models, stored on our servers after your session ends, or shared with any third parties. Your resume stays private.
+</Info>

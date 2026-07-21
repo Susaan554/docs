@@ -1,0 +1,90 @@
+---
+title: "Frequently Asked Questions — AI Resume Analyzer"
+sidebarTitle: "FAQ"
+description: "Find answers to common questions about AI Resume Analyzer's features, privacy practices, accuracy, and supported file formats."
+---
+
+This page answers the most common questions customers ask about using AI Resume Analyzer. Whether you're just getting started or want to understand how your results are calculated, you'll find clear answers below.
+
+## Getting Started
+
+<AccordionGroup>
+  <Accordion title="What file formats does AI Resume Analyzer support?">
+    AI Resume Analyzer accepts **PDF** and **DOCX** files. PDF is the recommended format because it preserves your resume's layout and text structure most reliably. If you upload a scanned PDF (an image-based file), the tool uses OCR (Optical Character Recognition) to extract the text — however, text-based PDFs consistently produce more accurate results than scanned versions.
+  </Accordion>
+
+  <Accordion title="Do I need to create an account to use it?">
+    No account is required to run an analysis. You can upload your resume and paste a job description directly on the main page and receive your results immediately. Simply visit the tool, provide your resume and the target job description, and click **Analyze** to get started.
+  </Accordion>
+
+  <Accordion title="How long does analysis take?">
+    Most analyses complete in just a few seconds. The exact time depends on the length of your resume, the complexity of the job description, and current server load. If your analysis takes longer than 30 seconds, try refreshing the page and submitting again.
+  </Accordion>
+</AccordionGroup>
+
+## Analysis & Results
+
+<AccordionGroup>
+  <Accordion title="How accurate is the AI analysis?">
+    AI Resume Analyzer is powered by **Google Generative AI (Gemini)** — the same underlying technology used in enterprise-grade HR and recruiting platforms. The analysis is highly capable at identifying skill gaps, matching keywords, and suggesting improvements. That said, treat your results as an informed guide rather than a definitive judgment. Factors like industry-specific jargon, non-standard resume formats, or highly niche roles can affect precision.
+  </Accordion>
+
+  <Accordion title="What is a good resume score?">
+    Resume scores are expressed on a scale of 0–100 and reflect how well your resume is structured, how completely your skills are presented, and how relevant your experience appears overall:
+
+    - **80–100** — Strong resume. Your resume is well-structured and content-rich. Focus on fine-tuning for specific roles.
+    - **60–79** — Good foundation. A few targeted improvements could significantly boost your impact.
+    - **40–59** — Needs work. Key sections may be thin or missing. Follow the recommendations provided to strengthen your resume.
+    - **0–39** — Major gaps detected. Your resume likely needs significant additions or restructuring before applying.
+
+    A score above 70 is generally considered solid for most roles.
+  </Accordion>
+
+  <Accordion title="How is the job match percentage calculated?">
+    The job match percentage measures the overlap between the skills, qualifications, and keywords found in your resume and those listed in the job description you provided. The AI compares both documents and calculates how many of the role's stated requirements your resume explicitly addresses. A higher match percentage means your resume more closely aligns with what the employer is asking for.
+  </Accordion>
+
+  <Accordion title="Can I analyze my resume against multiple job descriptions?">
+    Yes. You can run as many separate analyses as you like. To evaluate your resume against a different role, simply return to the main page, upload your resume again (or re-use the same file), paste the new job description, and click **Analyze**. Each analysis is independent, so you can compare results across multiple target positions.
+  </Accordion>
+</AccordionGroup>
+
+## Privacy & Data
+
+<AccordionGroup>
+  <Accordion title="Is my resume data stored?">
+    Your resume is processed in real time purely for the purpose of generating your analysis results. It is **not permanently stored** on our servers after your session ends. You do not need to worry about your personal career history or contact details being retained in a database.
+  </Accordion>
+
+  <Accordion title="Is my resume shared with third parties?">
+    No. Your resume content is sent only to the **Google Generative AI (Gemini) API** to perform the analysis — no other third parties receive your data. Google's API processes the text to generate your results and does not expose it to other users or services.
+  </Accordion>
+
+  <Accordion title="Can my resume be used to train AI models?">
+    No. Your resume data is not used to train or fine-tune any AI models, including Google's Gemini models. The content you submit is used solely to generate your individual analysis results and is not fed into any training pipeline.
+  </Accordion>
+</AccordionGroup>
+
+## Technical Questions
+
+<AccordionGroup>
+  <Accordion title="My PDF isn't being parsed correctly. What should I do?">
+    If the tool is misreading or missing content from your PDF, try the following steps:
+
+    1. **Use a text-based PDF.** Export your resume directly from Microsoft Word, Google Docs, or a dedicated resume builder rather than printing to PDF from a scanned document.
+    2. **Simplify your layout.** Resumes with heavy tables, multi-column graphics, text boxes, or decorative elements can confuse the parser. A clean, single-column layout works best.
+    3. **Convert to DOCX.** If your PDF continues to cause issues, save or export your resume as a `.docx` file and upload that instead — DOCX parsing is often more reliable for complex layouts.
+  </Accordion>
+
+  <Accordion title="The analysis seems to have missed some of my skills. Why?">
+    The AI reads exactly what is written in your resume — it does not infer skills that are implied or assumed. If a skill does not appear explicitly by name in your resume text, it will not be detected. To ensure all your skills are recognized:
+
+    - Write out full skill names (e.g., **"Python"**, **"React"**, **"Project Management"**) rather than relying on implied context.
+    - Add a dedicated **Skills** section that lists your technical and professional competencies clearly.
+    - Avoid acronyms or abbreviations that are not universally recognized in your field.
+  </Accordion>
+
+  <Accordion title="What languages are supported?">
+    **English** is the primary supported language and produces the most accurate analysis results. While Google Generative AI (Gemini) has multilingual capabilities, the scoring models, skill gap detection, and recommendation engine are optimized for English-language resumes and job descriptions. For the best experience, ensure both your resume and the job description are in English.
+  </Accordion>
+</AccordionGroup>
