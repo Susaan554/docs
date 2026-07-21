@@ -1,10 +1,10 @@
 ---
-title: "Troubleshooting Common Issues in Resume Analyzer"
+title: "Troubleshooting Common Issues — AI Resume Analyzer"
 sidebarTitle: "Troubleshooting"
-description: "Step-by-step guidance for resolving upload errors, file parsing problems, and unexpected analysis results in AI Resume Analyzer."
+description: "Step-by-step guidance for resolving upload errors, file parsing problems, unexpected analysis results, and low match scores in AI Resume Analyzer."
 ---
 
-This guide helps you resolve the most common issues you may encounter when using AI Resume Analyzer. Work through the relevant section below to identify and fix the problem quickly so you can get back to improving your resume.
+This guide helps you resolve the most common issues you may encounter when using AI Resume Analyzer. Work through the relevant section below to identify and fix the problem quickly so you can get back to improving your resume. For general usage help, see the [FAQ](faq) or the [quickstart guide](quickstart).
 
 ## Upload & File Issues
 
@@ -16,6 +16,8 @@ This guide helps you resolve the most common issues you may encounter when using
     2. **Check for file corruption.** Try opening the file on your device to confirm it is not damaged. If it won't open locally, recreate or re-export it from your original source.
     3. **Check the file size.** Very large files (typically over 10 MB) may fail to upload. If your file is unusually large, consider removing embedded images or exporting a lighter version.
     4. **Try a different browser.** Browser extensions — particularly ad blockers or privacy tools — can interfere with file upload functionality. Switch to a different browser (e.g., Chrome, Firefox, Edge) or open an incognito/private window and try again.
+
+    For a step-by-step walkthrough of the upload process, see [Uploading Your Resume](guides/uploading-resume).
   </Accordion>
 
   <Accordion title="The wrong file was uploaded">
@@ -48,6 +50,8 @@ This guide helps you resolve the most common issues you may encounter when using
     - Add a dedicated **Skills** section and list each competency by its full, standard name (e.g., **"Python"**, **"React"**, **"SQL"**, **"Project Management"**).
     - Avoid uncommon abbreviations or internal company terminology. Use the same language that appears in job descriptions for the roles you're targeting.
     - Make sure your resume is not using text embedded in images or decorative graphics — the parser can only read plain document text.
+
+    See [Skill Gap Analysis](features/skill-gap) for more on how the tool identifies and reports missing skills.
   </Accordion>
 
   <Accordion title="The analysis result seems generic">
@@ -58,6 +62,8 @@ This guide helps you resolve the most common issues you may encounter when using
     - Replace vague phrases like *"Responsible for managing projects"* with specific, quantified statements like *"Led a team of 6 engineers to deliver a cloud migration project 2 weeks ahead of schedule."*
     - Include measurable outcomes, technologies used, and clear scope wherever possible.
     - Ensure your job titles, company names, and date ranges are clearly formatted so the AI can accurately map your experience.
+
+    For guidance on acting on your results, see [Improvement Tips](features/improvement-tips) and [Reading Your Report](guides/reading-your-report).
   </Accordion>
 
   <Accordion title="My job match score is lower than expected">
@@ -68,6 +74,8 @@ This guide helps you resolve the most common issues you may encounter when using
     - **Paste the full job description.** Include all sections — the summary, responsibilities, and requirements. Partial job descriptions produce incomplete match calculations.
     - **Check for terminology mismatches.** If the job description says *"Node.js"* but your resume says *"NodeJS"* or *"Node"*, the AI may not link them. Standardize your skill names to match the exact language used in job postings you are targeting.
     - **Add missing skills you genuinely possess.** Review the skill gap section of your results and, where applicable, add skills you have but forgot to list on your resume.
+
+    For a detailed explanation of how the match percentage is calculated, see [Job Matching](features/job-matching) and [Job Description Matching](guides/job-description-matching).
   </Accordion>
 
   <Accordion title="Analysis is taking too long">
